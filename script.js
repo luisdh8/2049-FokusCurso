@@ -30,19 +30,19 @@ inputMusicaEnfoque.addEventListener('change', () => {
 });
 
 botonEnfoque.addEventListener('click', () => {
-    tiempoTranscurridoEnSegundos = 1500;
+    tiempoTranscurridoEnSegundos = 1500; // 25 minutos
     cambiarContexto('enfoque');
     botonEnfoque.classList.add('active');
 });
 
 botonCorto.addEventListener('click', () => {
-    tiempoTranscurridoEnSegundos = 300;
+    tiempoTranscurridoEnSegundos = 300; // 5 minutos
     cambiarContexto('descanso-corto');
     botonCorto.classList.add('active');
 });
 
 botonLargo.addEventListener('click', () => {
-    tiempoTranscurridoEnSegundos = 900;
+    tiempoTranscurridoEnSegundos = 900; // 15 minutos
     cambiarContexto('descanso-largo');
     botonLargo.classList.add('active');
 });
